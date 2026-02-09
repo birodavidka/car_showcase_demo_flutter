@@ -39200,7 +39200,7 @@ $0(){return A.lV(this.a,!1).dG()},
 $S:0}
 A.ajN.prototype={
 $0(){var s=this.a
-return s.vF(this.b,"https://example.com/cars/"+s.c.a)},
+return s.vF(this.b,"https://car-showcase-demo-flutter.vercel.app/cars/"+s.c.a)},
 $S:0}
 A.S9.prototype={
 M(a){var s=this,r=null,q=A.dg(16),p=s.f
