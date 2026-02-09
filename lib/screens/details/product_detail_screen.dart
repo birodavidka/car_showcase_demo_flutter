@@ -377,6 +377,11 @@ class _ShareSheet extends StatelessWidget {
 
   const _ShareSheet({required this.car});
 
+  static const String _shareBaseUrl = String.fromEnvironment(
+    'SHARE_BASE_URL',
+    defaultValue: 'https://car-showcase-demo-flutter.vercel.app',
+  );
+
   String _buildShareText() {
     return [
       car.title,
@@ -538,7 +543,7 @@ class _ShareSheet extends StatelessWidget {
                   textColor: textPrimary,
                   onTap: () => _shareText(
                     context,
-                    'https://example.com/cars/${car.id}',
+                    '$_shareBaseUrl/cars/${car.id}',
                   ),
                 ),
               ],
